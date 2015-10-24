@@ -1,0 +1,39 @@
+{
+  "name": "hue-promise",
+  "description": "Philips Hue API with promises",
+  "version": "0.1.0",
+  "homepage": "https://github.com/jsfi/hue-promise#readme",
+  "author": {
+    "name": "Martin Sachse",
+    "email": "martin.sachse@gmail.com",
+    "url": "http://jsfi.io"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "node node_modules/eslint/bin/eslint.js index.js lib/*.js && node node_modules/mocha/bin/mocha test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jsfi/hue-promise.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jsfi/hue-promise/issues"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "keywords": [
+    "Hue",
+    "Philips Hue",
+    "promise",
+    "api"
+  ],
+  "dependencies": {
+    "got": "^5.0.0",
+    "url-join": "0.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^1.7.3"
+  }
+}
