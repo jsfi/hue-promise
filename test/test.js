@@ -1,3 +1,3 @@
 'use strict';
 
-const huePromise = require('../')({ station: '', username: '' });
+const huePromise = require('../')({ bridge: '', username: '' });

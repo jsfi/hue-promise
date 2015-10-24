@@ -17,9 +17,9 @@ const req = require('./lib/request');
 const base = 'api';
 
 module.exports = function(configuration) {
-    let station = configuration.station;
+    let bridge = configuration.bridge;
     let username = configuration.username;
-    let baseUrl = urljoin(station, base);
+    let baseUrl = urljoin(bridge, base);
 
     if (isUser) {
         return {
@@ -242,6 +242,7 @@ module.exports = function(configuration) {
         return req.get(url()).then(parseBody);
     }
 
+    /* helper methods */
     function isUser() {
         if (!username) {
             throw new Error('No username configured.');

@@ -31,5 +31,5 @@ let huePromise = require('./hue-promise')(configuration);
 ## Example
 
 ```js
-let huePromise = require('./hue-promise')({ station: 'IP', username: 'username' });
+let huePromise = require('./hue-promise')({ bridge: 'IP', username: 'username' });
 ```
