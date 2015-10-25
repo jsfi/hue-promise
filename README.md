@@ -26,7 +26,7 @@ let huePromise = require('./hue-promise')({ bridge: 'IP', username: 'username' }
 
 ## Methods
 
-All API-methods will return a promise that resolve to the parsed response (all arguments and responses are defined in the [Philips hue API Documentation](http://www.developers.meethue.com/philips-hue-api)).
+All API-methods will return a promise that resolves to a parsed response (all arguments and responses are defined in the [Philips hue API Documentation](http://www.developers.meethue.com/philips-hue-api)).
 
 Only setUsername is a synchronous function as it configures the module.
 
