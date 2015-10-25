@@ -30,6 +30,7 @@
     "api"
   ],
   "dependencies": {
+    "array-uniq": "^1.0.2",
     "got": "^5.0.0",
     "url-join": "0.0.1"
   },
