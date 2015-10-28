@@ -24,6 +24,25 @@ let huePromise = require('./hue-promise')(configuration);
 let huePromise = require('./hue-promise')({ bridge: 'IP', username: 'username' });
 ```
 
+## Configuration
+
+```js
+{
+    bridge: 'IP',
+    username: 'username'
+}
+```
+
+### Bridge
+
+This option is required, it sets the IP the requests are send to.
+
+### username
+
+This option is optional. If it is empty the only method that can return a successful response is `huePromise.configuration.createUser('devicetype')` (if the button on the bridges is pressed during the last 30 seconds).
+
+It can be changed later with the method `huePromise.setUsername(username)`.
+
 ## Methods
 
 All API-methods will return a promise that resolves to a parsed response (all arguments and responses are defined in the [Philips hue API Documentation](http://www.developers.meethue.com/philips-hue-api)).
