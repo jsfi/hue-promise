@@ -37,7 +37,7 @@ let huePromise = require('./hue-promise')({ bridge: 'IP', username: 'username' }
 
 This option is required, it sets the IP the requests are send to.
 
-### username
+### Username
 
 This option is optional. If it is empty the only method that can return a successful response is `huePromise.configuration.createUser('devicetype')` (if the button on the bridges is pressed during the last 30 seconds).
 
